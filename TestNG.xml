@@ -1,0 +1,9 @@
+<suite name="SimpleSuite">
+    <tests>
+        <test name="SimpleTest">
+            <classes>
+                <class name="com.xebia.xke.testNG.sampleTestNGClass"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

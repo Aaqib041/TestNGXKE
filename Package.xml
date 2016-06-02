@@ -1,0 +1,9 @@
+<suite name="SimpleGroupsSuite">
+    <tests>
+        <test name="SimpleGroupsTest">
+            <packages>
+                <package name="com.xebia.xke.testNG"/>
+            </packages>
+        </test>
+    </tests>
+</suite>

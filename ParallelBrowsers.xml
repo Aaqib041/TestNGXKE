@@ -1,0 +1,14 @@
+<suite name="SimpleSuite" parallel= "tests" thread-count="10">
+    <tests>
+        <test name="SimpleTest1">
+            <classes>
+                <class name="com.xebia.xke.testNG.ParallelBrowsers"/>
+            </classes>
+        </test>
+        <test name="SimpleTest2">
+            <classes>
+                <class name="com.xebia.xke.testNG.ParallelBrowsers"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

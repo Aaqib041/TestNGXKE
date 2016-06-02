@@ -1,0 +1,24 @@
+<suite name="SimpleSuite">
+    <tests>
+        <test name="SimpleTest">
+        	<groups>
+    			<define name="functest">
+      				<include name="windows"/>
+      				<include name="linux"/>
+    			</define>
+  
+    			<define name="all">
+      				<include name="functest"/>
+      				<include name="checkintest"/>
+    			</define>
+    			<run>
+      				<include name="all"/>
+    			</run>
+  			</groups>
+  			
+            <classes>
+                <class name="com.xebia.xke.testNG.sampleTestNGClass"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

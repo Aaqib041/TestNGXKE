@@ -1,0 +1,15 @@
+<suite name="SimpleGroupsSuite">
+    <tests>
+        <test name="SimpleGroupsTest">
+        	<groups>
+    			<run>
+      				<include name="windows.*"/>
+    			</run>
+  			</groups>
+	  		
+            <classes>
+                <class name="com.xebia.xke.testNG.GroupRegex"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

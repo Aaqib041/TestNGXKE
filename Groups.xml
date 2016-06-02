@@ -1,0 +1,16 @@
+<suite name="SimpleGroupsSuite">
+    <tests>
+        <test name="SimpleGroupsTest">
+        	<groups>
+        		<run>
+      				<exclude name="group1"  />
+      				<include name="group2"  />
+    			</run>
+	  		</groups>
+	  		
+            <packages>
+                <package name="com.xebia.xke.testNG.withGroups"/>
+            </packages>
+        </test>
+    </tests>
+</suite>

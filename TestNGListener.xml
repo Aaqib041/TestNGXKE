@@ -1,0 +1,12 @@
+<suite name="SimpleSuite">
+	<listeners>
+    	<listener class-name="com.xebia.xke.testNG.ListenerExample" />
+  	</listeners>
+    <tests>
+        <test name="SimpleTest">
+            <classes>
+                <class name="com.xebia.xke.testNG.sampleTestNGClass"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

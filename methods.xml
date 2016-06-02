@@ -1,0 +1,13 @@
+<suite name="SimpleSuite">
+    <tests>
+        <test name="SimpleTest">
+            <classes>
+                <class name="com.xebia.xke.testNG.Priority">
+                	<methods>
+        				<include name="second" />
+      				</methods>
+      			</class>
+            </classes>
+        </test>
+    </tests>
+</suite>

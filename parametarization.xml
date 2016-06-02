@@ -1,0 +1,10 @@
+<suite name="SimpleSuite">
+    <tests>
+        <test name="SimpleTest">
+        <parameter name="sampleParameter"  value="XEBIA"/>
+            <classes>
+                <class name="com.xebia.xke.testNG.Parametrarization"/>
+            </classes>
+        </test>
+    </tests>
+</suite>

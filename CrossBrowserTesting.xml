@@ -1,0 +1,11 @@
+<suite name="SimpleSuite">
+    <tests>
+    	
+        <test name="SimpleTest">
+        <parameter name="browserType"  value="chrome"/>
+            <classes>
+                <class name="com.xebia.xke.testNG.CrossBrowserTesting"/>
+            </classes>
+        </test>
+    </tests>
+</suite>
