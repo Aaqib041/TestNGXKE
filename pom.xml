@@ -64,31 +64,27 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
-				<configuration>
-					<forkMode>always</forkMode>
-					<systemPropertyVariables>
-						<reporter.debug>false</reporter.debug>
-					</systemPropertyVariables>
-					<suiteXmlFiles>
-						<suiteXmlFile>${testngxml}</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>integration-test</phase>
-						<goals>
-							<goal>test</goal>
-						</goals>
-						<configuration>
-							<forkMode>always</forkMode>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+		<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>${testngxml}</suiteXmlFile>          
+			
+                              
+          </suiteXmlFiles>
+           <systemPropertyVariables>
+            <propertyName>firefox</propertyName>
+          </systemPropertyVariables>
+          <properties>
+            <property>
+              <name>surefire.testng.verbose</name>
+              <value>10</value>
+            </property>
+          </properties>
+        </configuration>
+      </plugin>
 
 		</plugins>
 	</build>
